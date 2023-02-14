@@ -78,7 +78,22 @@ def runDFAMachine(dfaText, inputText, outputText):
 def main():
     dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/dfa.txt"
     inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/outputTest1.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/outputTest.txt"
+    runDFAMachine(dfaText, inputText, outputText)
+
+    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/dfa.txt"
+    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/input.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/outputTest.txt"
+    runDFAMachine(dfaText, inputText, outputText)
+
+    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example3/dfa.txt"
+    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example3/input.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example3/outputTest.txt"
+    runDFAMachine(dfaText, inputText, outputText)
+
+    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example4/dfa.txt"
+    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example4/input.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example4/outputTest.txt"
     runDFAMachine(dfaText, inputText, outputText)
 
     
