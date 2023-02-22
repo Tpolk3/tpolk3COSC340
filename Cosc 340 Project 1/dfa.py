@@ -14,33 +14,34 @@ class direction:
         return self.p2
     
     def __str__(self):
-        return "(" + self.p1 + "," + self.transistion + "," + self.p2 + ")" #+"\n"
+        return "(" + self.p1 + "," + self.transistion + "," + self.p2 + ")"
 
 class dfa:
     def __init__(self, inputList):
-        self.states = inputList[0]
-        self.alphabet = inputList[1]
-        self.startState = inputList[2]
-        self.finalStates = inputList[3]
+        self.startState = inputList[2].strip("\n")
+        self.finalStates = inputList[3].split(",")
         self.directions = inputList[4:]
         counter = 0
         while(counter < len(self.directions)):
-            self.directions[counter] = direction(inputList[counter+4][0:2], inputList[counter+4][3:4], inputList[counter+4][5:7])
+            tempList = inputList[counter+4].split(",")
+            tempList[2] = tempList[2].strip("\n")
+            self.directions[counter] = direction(tempList[0], tempList[1], tempList[2])
             counter = counter + 1
 
     def runWith(self, inputString):
-        currentState = self.startState[0:2]
+        currentState = self.startState
         for x in inputString:
+            transistion = False
             for y in self.directions:
-                if currentState == y.getP1():
-                    if x == y.getTransistion():
-                        currentState = y.getP2()
-                        break
-        counter = 0
-        while(counter < len(self.finalStates)-2):
-            if currentState == self.finalStates[counter:counter+2]:
+                if not(transistion):
+                    if currentState == y.getP1():
+                        if x == y.getTransistion():
+                            currentState = y.getP2()
+                            transistion = True                   
+        for x in self.finalStates:
+            x = x.strip("\n")
+            if currentState == x:
                 return True
-            counter = counter + 3
         return False
 
     
@@ -76,21 +77,31 @@ def runDFAMachine(dfaText, inputText, outputText):
     outPutFile.close()
 
 def main():
+    #Testing
+    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/dfa.txt"
+    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/input.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/outputTest.txt"
+    #runDFAMachine(dfaText, inputText, outputText)
+
+    #Example1
     dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/dfa.txt"
     inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/input.txt"
     outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/outputTest.txt"
     runDFAMachine(dfaText, inputText, outputText)
 
+    #Example2
     dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/dfa.txt"
     inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/input.txt"
     outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/outputTest.txt"
     runDFAMachine(dfaText, inputText, outputText)
 
+    #Example3
     dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example3/dfa.txt"
     inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example3/input.txt"
     outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example3/outputTest.txt"
     runDFAMachine(dfaText, inputText, outputText)
 
+    #Example4
     dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example4/dfa.txt"
     inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example4/input.txt"
     outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example4/outputTest.txt"

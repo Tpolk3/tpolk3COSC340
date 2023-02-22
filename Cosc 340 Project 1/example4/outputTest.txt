@@ -1,8 +1,8 @@
 reject
+accept
 reject
+accept
 reject
+accept
 reject
-reject
-reject
-reject
-reject
+accept
