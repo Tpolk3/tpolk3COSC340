@@ -78,33 +78,33 @@ def runDFAMachine(dfaText, inputText, outputText):
 
 def main():
     #Testing
-    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/dfa.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/outputTest.txt"
+    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example2/dfa.txt"
+    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/input.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/outputTest.txt"
     #runDFAMachine(dfaText, inputText, outputText)
 
     #Example1
-    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/dfa.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example1/outputTest.txt"
+    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example1/dfa.txt"
+    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example1/input.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example1/outputTest.txt"
     runDFAMachine(dfaText, inputText, outputText)
 
     #Example2
-    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/dfa.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example2/outputTest.txt"
+    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example2/dfa.txt"
+    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example2/input.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example2/outputTest.txt"
     runDFAMachine(dfaText, inputText, outputText)
 
     #Example3
-    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example3/dfa.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example3/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example3/outputTest.txt"
+    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example3/dfa.txt"
+    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example3/input.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example3/outputTest.txt"
     runDFAMachine(dfaText, inputText, outputText)
 
     #Example4
-    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example4/dfa.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example4/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Cosc 340 Project 1/example4/outputTest.txt"
+    dfaText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example4/dfa.txt"
+    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example4/input.txt"
+    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 1/example4/outputTest.txt"
     runDFAMachine(dfaText, inputText, outputText)
 
     
