@@ -1,5 +1,3 @@
-from time import sleep
-
 class direction:
     def __init__(self, p1, transition, p2, p2print):
         self.p1 = p1
