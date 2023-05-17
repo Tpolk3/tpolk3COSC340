@@ -1,7 +1,3 @@
-yyx
-yyyx
-yyxyx
-yyxyy
-yyxyyx
-yyxy
-yyyy
+abcdcba
+abcddcba
+ababab
