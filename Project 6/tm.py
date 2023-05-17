@@ -120,19 +120,7 @@ def main():
     outputText = 'output.txt'
     runTM(tmText, inputText, outputText)
     
-    """
-    #Example1
-    tmText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example1/tm.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example1/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example1/outputTest.txt"
-    runTM(tmText, inputText, outputText)
-
-    #Example2
-    tmText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example2/tm.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example2/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example2/outputTest.txt"
-    runTM(tmText, inputText, outputText)
-    """
+   
 
     
 if(__name__ == "__main__"):
