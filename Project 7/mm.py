@@ -85,33 +85,10 @@ def runMM(mmText, inputText, outputText):
     outPutFile.close()
 
 def main():
-    #Testing
-    """
-    mmText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 5/example1/mm.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 5/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 5/outputTest.txt"
-    """
-    #runMM(mmText, inputText, outputText)
-
     mmText = 'mm.txt'
     inputText = 'input.txt'
     outputText = 'output.txt'
     runMM(mmText, inputText, outputText)
-    
-    """
-    #Example1
-    mmText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example1/mm.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example1/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example1/outputTest.txt"
-    runMM(mmText, inputText, outputText)
-
-    #Example2
-    mmText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example2/mm.txt"
-    inputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example2/input.txt"
-    outputText = "/Users/tylerpolk/Github Classwork/tpolk3COSC340/Project 6/example2/outputTest.txt"
-    runMM(mmText, inputText, outputText)
-    """
-
     
 if(__name__ == "__main__"):
     main()
